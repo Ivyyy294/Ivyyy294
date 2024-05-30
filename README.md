@@ -1,4 +1,4 @@
-## Hi there, I'm Ivyyy! 👋
+## Hi there, I'm Lara! 👋
 - 👀 I am software developer from Germany, with a burning passion for cosplay and video games.
 - 🔨 I’m currently working on my 2D Game engine [IvyyyEngine](https://github.com/Ivyyy294/IvyyyEngine)
 - 🎮 Here are some of my games [ivyyy294.itch.io](https://ivyyy294.itch.io/)
