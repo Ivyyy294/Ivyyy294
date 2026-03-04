@@ -24,46 +24,11 @@ img {
   padding: 0 20px;
 }
 
-/* NAVIGATION */
-.navbar {
-  background: #333;
-  color: white;
-  padding: 20px 0;
-}
-
-.nav-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.nav-links a:hover,
-.nav-links .active {
-  color: #d63384;
-}
-
 /* HERO */
 .hero {
   background: #eaeaea;
-  padding: 60px 0;
+  padding: 0px 0;
+  margin: 60px 0px;
 }
 
 .hero-content {
@@ -106,8 +71,8 @@ img {
 .section-header {
   background: #3a3a3a;
   color: white;
-  padding: 40px 0;
-  margin-top: 60px;
+  padding: 10px 0;
+  margin: 60px 0px;
 }
 
 .section-header h2 {

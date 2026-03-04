@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Lara Gülpen</title>
+    <link rel="stylesheet" href="navbar_files/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR (loaded via JS if you're using that method) -->
+  <div id="navbar"></div>
+
+  <script>
+    fetch("navbar_files/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Welcome!</h1>
+        <p>
+          My name is Lara and I am a software engineer from Germany with a 
+          burning passion for cosplay and video games.
+        </p>
+        <a></a>
+      </div>
+      <div class="hero-image">
+        <img src="images/Lara.jpg" alt="Portrait">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION HEADER -->
+  <section>
+    <div class="section-header">
+      <div class="container">
+        <h2>Experience</h2>
+      </div>
+    </div>
+
+    <div class="container cv-box">
+      <div class="cv-entry">
+        <p class="cv-date">09/2025 – 08/2026</p>
+        <p class="cv-title">
+          Centre for A.I. and Neuroscience, Hertz-Professur, University of Bonn
+        </p>
+        <ul>
+          <li>Student Assistant Game Programming</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <p class="cv-date">09/2024 – 02/2025</p>
+        <p class="cv-title">Spoonful Games GmbH, Cologne</p>
+        <ul>
+          <li>Mandatory Internship as part of B.A. Digital Games</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <p class="cv-date">10/2023 – 03/2024</p>
+        <p class="cv-title">Spoonful Games GmbH, Cologne</p>
+        <ul>
+          <li>Lead Game Programmer for "Join the Comfortzone"</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <p class="cv-date">06/2015 – 10/2023</p>
+        <p class="cv-title">esco GmbH, Herzogenrath</p>
+        <ul>
+          <li>Computer science expert for software development</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
