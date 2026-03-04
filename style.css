@@ -48,6 +48,10 @@ img {
   max-width: 500px;
 }
 
+.placeholder {
+  visibility: hidden;
+}
+
 .btn {
   display: inline-block;
   background: #d63384;
@@ -85,7 +89,6 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  padding: 60px 0;
 }
 
 .card {
