@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lara Gülpen | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <div id="navbar"></div>
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Welcome!</h1>
+        <p>
+          My name is Lara and I am a software engineer from Germany with a 
+          burning passion for cosplay and video games.
+        </p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/Lara.jpg" alt="Portrait">
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLISHED GAMES -->
+  <section id="published">
+    <div class="section-header">
+      <div class="container">
+        <h2>Published Games</h2>
+      </div>
+    </div>
+
+    <div class="container grid">
+      <div class="card"><img src="images/BB.png" alt=""></div>
+      <div class="card"><img src="images/CC.png" alt=""></div>
+      <div class="card"><img src="images/SoilSiege.png" alt=""></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header">
+      <div class="container">
+        <h2>Projects</h2>
+      </div>
+    </div>
+
+    <div class="container grid">
+      <div class="card"><img src="images/bob.png" alt=""></div>
+      <div class="card"><img src="images/oxydive.png" alt=""></div>
+      <div class="card"><img src="images/PuckEffect.png" alt=""></div>
+    </div>
+  </section>
+
+    <!-- COSPLAY -->
+  <section id="cosplays">
+    <div class="section-header">
+      <div class="container">
+        <h2>Cosplay</h2>
+      </div>
+    </div>
+
+    <div class="container grid">
+      <div class="card"><img src="images/Asuka1.jpg" alt=""></div>
+      <div class="card"><img src="images/Agnaktor1.jpg" alt=""></div>
+      <div class="card"><img src="images/Max1.jpg" alt=""></div>
+    </div>
+  </section>
+
+</body>
+</html>
