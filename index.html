@@ -6,6 +6,7 @@
   <title>Lara Gülpen | Portfolio</title>
   <link rel="stylesheet" href="navbar_files/style.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="footer_files/style.css" />
 </head>
 <body>
 
@@ -80,6 +81,16 @@
       <div class="card"><a href="max.html"><img src="max_files/Max1_crop.jpg" alt=""></a></div>
     </div>
   </section>
+
+  <!-- FOOT BAR -->
+  <div id="footer"></div>
+  <script>
+    fetch("footer_files/footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>

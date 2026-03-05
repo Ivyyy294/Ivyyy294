@@ -1,0 +1,28 @@
+.footer {
+  background: #333;
+  color: white;
+  padding: 20px 0;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.footer-text {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-links img {
+width: 30px;
+}
