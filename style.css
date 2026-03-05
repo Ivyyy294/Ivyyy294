@@ -71,6 +71,17 @@ img {
   border-radius: 8px;
 }
 
+.platform-link {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.platform-link img{
+  max-width: 32px;
+  max-height: 32px;
+}
+
 /* SECTION HEADER */
 .section-header {
   background: #3a3a3a;

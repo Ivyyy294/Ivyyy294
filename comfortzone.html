@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Lara Gülpen</title>
+    <link rel="stylesheet" href="navbar_files/style.css">
+    <link rel="stylesheet" href="footer_files/style.css" />
+    <link rel="stylesheet" href="cv_files/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR (loaded via JS if you're using that method) -->
+    <div id="navbar"></div>
+
+    <script>
+        fetch("../navbar_files/navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+        <div class="hero-text">
+            <h1>Join the Comfortzone</h1>
+            <p>
+            A serious game by the Jugendstiftung Baden-Württemberg. In cooperation with the Cologne-based game studio Spoonful Games and the Center for Didactic Computer Game Research at the University of Education in Freiburg.
+            </p>
+            <ul class="platform-link">
+                <a href="https://join-the-comfortzone.com/"><img src="images/Chrome--Streamline-Core.png" alt=""></a>
+            </ul>
+        </div>
+        <div class="hero-image">
+            <img src="comfortzone_files/CC5.png" alt="Portrait">
+        </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <div class="section-header">
+        <div class="container">
+            <h2>Gallery</h2>
+        </div>
+        </div>
+        <div class="container grid">
+        <div class="card"><img src="comfortzone_files/CC12.png" alt=""></div>
+        <div class="card"><img src="comfortzone_files/CC14.png" alt=""></div>
+        <div class="card"><img src="comfortzone_files/CC13.png" alt=""></div>
+        <div class="card"><img src="comfortzone_files/CC6.png" alt=""></div>
+        <div class="card"><img src="comfortzone_files/CC7.png" alt=""></div>
+        <div class="card"><img src="comfortzone_files/CC9.png" alt=""></div>
+        <div class="card"><img src="comfortzone_files/CC8.png" alt=""></div>
+        <div class="card"><img src="comfortzone_files/CC10.png" alt=""></div>
+        <div class="card"><img src="comfortzone_files/CC11.png" alt=""></div>
+        </div>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards">
+        <div class="section-header">
+        <div class="container">
+            <h2>Awards</h2>
+        </div>
+        </div>
+        <div class="container grid">
+            <div class="card">
+                <a href="https://pädagogischer-medienpreis.de/die-gewinnerinnen-2025">
+                    <img src="comfortzone_files/pmp.png" alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://tommi.kids/magazin/spiele/platz-3-join-the-comfortzone-jugendstiftung-baden-wuerttemberg/">
+                    <img src="comfortzone_files/tommi.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOT BAR -->
+    <div id="footer"></div>
+    <script>
+        fetch("footer_files/footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+</body>
+</html>
