@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Max | Lara Gülpen</title>
+    <link rel="stylesheet" href="navbar_files/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer_files/style.css" />
+    <link rel="stylesheet" href="cv_files/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR (loaded via JS if you're using that method) -->
+  <div id="navbar"></div>
+
+  <script>
+    fetch("navbar_files/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Max</h1>
+        <p>
+          Original LARP character, member of Bunker Springs mischief trio, the Rad Coons.
+        </p>
+        <a href="cv.html" class="btn placeholder">Learn More</a>
+      </div>
+      <div class="hero-image">
+        <img src="max_files/Max1_crop.jpg" alt="Portrait">
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="section-header">
+      <div class="container">
+        <h2>Gallery</h2>
+      </div>
+    </div>
+    <div class="container grid">
+      <div class="card"><img src="max_files/Max1.jpg" alt=""></div>
+      <div class="card"><img src="max_files/Max2.jpg" alt=""></div>
+      <div class="card"><img src="max_files/Max4.jpg" alt=""></div>
+      <div class="card"><img src="max_files/Max3.jpg" alt=""></div>
+      <div class="card"><img src="max_files/Max5.jpg" alt=""></div>
+    </div>
+  </section>
+  
+  <!-- Credits -->
+  <section>
+    <div class="section-header">
+      <div class="container">
+        <h2>Credits</h2>
+      </div>
+    </div>
+
+    <div class="container cv-box">
+      <div class="cv-entry">
+        <p class="cv-title">
+          Costume by: <strong>Lara Gülpen</strong>
+        </p>
+        <p class="cv-title">
+          Weapon L15A: <strong>Lara Gülpen</strong>
+        </p>
+        <p class="cv-title">
+          Photos by: <a href="https://www.instagram.com/districtcreations/"><strong>District Creations</strong></a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOT BAR -->
+  <div id="footer"></div>
+  <script>
+    fetch("footer_files/footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
