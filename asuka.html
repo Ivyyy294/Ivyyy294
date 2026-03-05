@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Lara Gülpen</title>
+    <link rel="stylesheet" href="navbar_files/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cv_files/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR (loaded via JS if you're using that method) -->
+  <div id="navbar"></div>
+
+  <script>
+    fetch("../navbar_files/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Asuka</h1>
+        <p>
+          Asuka Langley Soryu ~ Neon Genesis Evangelion
+        </p>
+        <a href="cv.html" class="btn placeholder">Learn More</a>
+      </div>
+      <div class="hero-image">
+        <img src="asuka_files/Asuka1_crop.jpg" alt="Portrait">
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="section-header">
+      <div class="container">
+        <h2>Gallery</h2>
+      </div>
+    </div>
+    <div class="container grid">
+      <div class="card"><img src="asuka_files/Asuka1.jpg" alt=""></div>
+      <div class="card"><img src="asuka_files/Asuka2.jpg" alt=""></div>
+      <div class="card"><img src="asuka_files/Asuka3.jpg" alt=""></div>
+      <div class="card"><img src="asuka_files/Asuka4.jpg" alt=""></div>
+      <div class="card"><img src="asuka_files/Asuka5.jpg" alt=""></div>
+    </div>
+  </section>
+  
+  <!-- Credits -->
+  <section>
+    <div class="section-header">
+      <div class="container">
+        <h2>Credits</h2>
+      </div>
+    </div>
+
+    <div class="container cv-box">
+      <div class="cv-entry">
+        <p class="cv-title">
+          Plugsuit by: <a href="https://www.instagram.com/andromeda_latex/"><strong>Andromeda Latex</strong></a>
+        </p>
+        <p class="cv-title">
+          Spear of Longinus by: <strong>Lara Gülpen</strong>
+        </p>
+        <p class="cv-title">
+          Interface headset by: <a href="https://www.instagram.com/iceman_props/"><strong>Iceman props</strong></a> & <strong>Lara Gülpen</strong>
+        </p>
+        <p class="cv-title">
+          Wig by: <a href="https://www.instagram.com/iceman_props/"><strong>Trighz</strong></a> & <strong>Lara Gülpen</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
