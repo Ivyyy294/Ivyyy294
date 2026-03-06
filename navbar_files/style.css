@@ -39,6 +39,10 @@
 .dropdown {
   float: left;
   overflow: hidden;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
 }
 
 /* Dropdown button */
@@ -48,7 +52,7 @@
   outline: none;
   color: white;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
+  font-family: inherit;
 }
 
 /* Dropdown content (hidden by default) */
