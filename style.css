@@ -37,15 +37,22 @@ img {
   gap: 50px;
 }
 
+.hero-text
+{
+  min-height: 350px;
+  padding-top: 50px;
+}
+
 .hero-text h1 {
   font-size: 48px;
-  color: #d63384;
+  color: #B72484;
   margin-bottom: 20px;
 }
 
 .hero-text p {
   margin-bottom: 25px;
   max-width: 500px;
+  min-height: 100px;
 }
 
 .placeholder {
@@ -54,7 +61,7 @@ img {
 
 .btn {
   display: inline-block;
-  background: #d63384;
+  background: #B72484;
   color: white;
   padding: 12px 25px;
   text-decoration: none;
