@@ -7,18 +7,13 @@
   <link rel="stylesheet" href="navbar_files/style.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="footer_files/style.css" />
+  <link rel="icon" type="image/x-icon" href="images/logo.ico">
 </head>
 <body>
 
   <!-- NAVIGATION -->
   <div id="navbar"></div>
-  <script>
-    fetch("navbar_files/navbar.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("navbar").innerHTML = data;
-      });
-  </script>
+  <script src="js/main.js"></script>
 
   <!-- HERO -->
   <section class="hero">

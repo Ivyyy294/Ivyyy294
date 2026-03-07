@@ -8,19 +8,13 @@
     <link rel="stylesheet" href="footer_files/style.css" />
     <link rel="stylesheet" href="cv_files/style.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
 </head>
 <body>
 
     <!-- NAVBAR (loaded via JS if you're using that method) -->
     <div id="navbar"></div>
-
-    <script>
-        fetch("navbar_files/navbar.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("navbar").innerHTML = data;
-        });
-    </script>
+    <script src="js/main.js"></script>
 
     <!-- HERO -->
     <section class="hero">
