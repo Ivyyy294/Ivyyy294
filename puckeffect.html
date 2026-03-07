@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUCK Effect | Lara Gülpen</title>
+    <link rel="stylesheet" href="navbar_files/style.css">
+    <link rel="stylesheet" href="footer_files/style.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/section_style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+</head>
+<body>
+
+    <!-- NAVBAR (loaded via JS if you're using that method) -->
+    <div id="navbar"></div>
+    <script src="js/main.js"></script>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+        <div class="hero-text">
+            <h1>PUCK Effect</h1>
+            <p>
+           A sci-fi reimagining of <strong>A Midsummer Night's Dream</strong>, "PUCK Effect" is a chat simulator where players are stuck in a spaceship room, exploring relationships between the four passengers. It’s a 3D first-person game that begins as a romance but quickly turns dark as the ship's AI interferes.
+            </p>
+            <ul class="platform-link">
+                <a href="https://ivyyy294.itch.io/puck-effect"><img src="images/Itch-Io--Streamline-Font-Awesome.png" alt=""></a>
+            </ul>
+        </div>
+        <div class="hero-image">
+            <img src="puckeffect_files/PuckEffect.png" alt="Portrait">
+        </div>
+        </div>
+    </section>
+
+    <!-- Role -->
+    <section>
+        <div class="section-header">
+        <div class="container">
+            <h2>Contribution</h2>
+        </div>
+        </div>
+        <div class="container section-box-horizontal">
+            <div class="section-entry">
+                <p class="section-title">Project Lead</p>
+                <ul>
+                    <li>Team Leadership & motivation</li>
+                    <li>Project Planning & Scope</li>
+                    <li>Task planning and distribution</li>
+                    <li>Risk and Issue Mitigation</li>
+                    <li>Client communication</li>
+                    <li>Quality Assurance</li>
+                </ul>
+            </div>
+            <div class="section-entry">
+                <p class="section-title">Lead Programmer</p>
+                <ul>
+                    <li>Architected a custom graphical node-based dialogue system with integrated runtime variable blackboard for conditional logic, dynamic state tracking and narrative branching.</li>
+                    <li>Engineered a ScriptableObject based event system to trigger gameplay events from dialog nodes. </li>
+                    <li>Implemented a custom persistant save system to manage player progression.</li>
+                    <li>Integrated diagetic and non-diagetic UI elements.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <div class="section-header">
+        <div class="container">
+            <h2>Gallery</h2>
+        </div>
+        </div>
+        <div class="container grid">
+        <div class="card"><iframe width="560" height="315" src="https://www.youtube.com/embed/60DiztAlqe0?si=8PAsfIOKebVM3nzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <div class="card"><img src="puckeffect_files/puck1.png" alt=""></div>
+        <div class="card"><img src="puckeffect_files/puck2.png" alt=""></div>
+        <div class="card"><img src="puckeffect_files/puck3.png" alt=""></div>
+        <div class="card"><img src="puckeffect_files/puck4.png" alt=""></div>
+        <div class="card"><img src="puckeffect_files/puck5.png" alt=""></div>
+        <div class="card"><img src="puckeffect_files/puck6.png" alt=""></div>
+        <div class="card"><img src="puckeffect_files/puck7.png" alt=""></div>
+        </div>
+    </section>
+
+    <!-- FOOT BAR -->
+    <div id="footer"></div>
+    <script>
+        fetch("footer_files/footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+</body>
+</html>
