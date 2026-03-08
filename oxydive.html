@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxydive | Lara Gülpen</title>
+    <link rel="stylesheet" href="navbar_files/style.css">
+    <link rel="stylesheet" href="footer_files/style.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/section_style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+</head>
+<body>
+
+    <!-- NAVBAR (loaded via JS if you're using that method) -->
+    <div id="navbar"></div>
+    <script src="js/main.js"></script>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+        <div class="hero-text">
+            <h1>Oxydive</h1>
+            <p>
+           A sci-fi reimagining of <strong>A Midsummer Night's Dream</strong>, "PUCK Effect" is a chat simulator where players are stuck in a spaceship room, exploring relationships between the four passengers. It’s a 3D first-person game that begins as a romance but quickly turns dark as the ship's AI interferes.
+            </p>
+            <ul class="platform-link">
+                <a href="https://github.com/Ivyyy294/Oxydive"><img src="images/Github--Streamline-Unicons.png" alt=""></a>
+            </ul>
+        </div>
+        <div class="hero-image">
+            <img src="oxydive_files/oxydive.png" alt="Portrait">
+        </div>
+        </div>
+    </section>
+
+    <!-- Role -->
+    <section>
+        <div class="section-header">
+        <div class="container">
+            <h2>Contribution</h2>
+        </div>
+        </div>
+        <div class="container section-box-horizontal">
+            <div class="section-entry">
+                <p class="section-title">Lead Programmer</p>
+                <ul>
+                    <li>Engineered a custom multiplayer network stack from scratch.</li>
+                    <li>Designed a flexible data serialization class to efficiently transmit complex data structures between clients and host.</li>
+                    <li>Implemented session management systems including host discovery, automatic session detection, and hot-join support for players entering active matches.</li>
+                    <li>Implemented a reflection-based Remote Procedure Call (RPC) system capable of invoking methods with arbitrary parameter counts across the network.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <div class="section-header">
+        <div class="container">
+            <h2>Gallery</h2>
+        </div>
+        </div>
+        <div class="container grid">
+            <div class="card"><iframe width="560" height="315" src="https://www.youtube.com/embed/1wU-JODbkIE?si=AGYa7vh53aQsnxEp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="card"><img src="oxydive_files/UI_Start.png" alt=""></div>
+            <div class="card"><img src="oxydive_files/UI_Menu.png" alt=""></div>
+            <div class="card"><img src="oxydive_files/UI_Lobby.png" alt=""></div>
+            <div class="card"><img src="oxydive_files/Ingame_04.png" alt=""></div>
+            <div class="card"><img src="oxydive_files/Ingame_05.png" alt=""></div>
+        </div>
+    </section>
+
+    <!-- FOOT BAR -->
+    <div id="footer"></div>
+    <script>
+        fetch("footer_files/footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+</body>
+</html>
